@@ -1,9 +1,38 @@
 <!DOCTYPE html>
-<html>
-  <body>
-    <script>
-      location.href =
-      "intent://settings#Intent;action=android.settings.ACCESSIBILITY_SETTINGS;end";
-    </script>
-  </body>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Intent Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f5f5f5;
+    }
+    button {
+      padding: 16px 24px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <button onclick="openAccessibilitySettings()">
+    Abrir configuración requerida
+  </button>
+
+  <script>
+    function openAccessibilitySettings() {
+      window.location.href =
+        "intent://settings#Intent;action=android.settings.ACCESSIBILITY_SETTINGS;end";
+    }
+  </script>
+
+</body>
 </html>
+
